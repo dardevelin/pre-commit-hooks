@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import os
+from typing import Sequence
+
+
 """The commit-msg Git hook for the project to validate the commit message."""
 import sys
 from enum import Enum
@@ -146,5 +153,10 @@ def check_commit_msg_pattern():
         print_with_color(message, Level.OK)
 
 
-if __name__ == "__main__":
+def main(argv: Sequence[str] | None = None) -> int:
+    """The main function."""
     check_commit_msg_pattern()
+    return 0
+
+if __name__ == '__main__':
+    raise SystemExit(main())
