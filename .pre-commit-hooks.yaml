@@ -199,5 +199,5 @@
     entry: commit-message-hook
     language: python
     types: [text]
-    stages: [commit]
+    stages: [commit-msg]
     
