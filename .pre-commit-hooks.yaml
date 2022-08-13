@@ -193,3 +193,9 @@
     language: python
     types: [text]
     stages: [commit, push, manual]
+-   id: commit-message-hook
+    name: commit message hook
+    description: lints the commit message
+    language: python
+    types: [text]
+    
