@@ -196,7 +196,7 @@
 -   id: commit-message-hook
     name: commit message hook
     description: lints the commit message
-    entry: check_commit_msg_pattern
+    entry: commit-message-hook
     language: python
     types: [text]
     stages: [commit]
